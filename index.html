@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="KO">
+    <head>
+        <meta charset="utf-8">
+        <title>Project-H_TODOLIST</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media.css" type="text/css" 
+					media="screen and (max-width: 640px)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section class="section1">
+                <div class="section1_box">
+                    <div>
+                        <h1 id="today"></h1>
+                    </div>
+                    <div>
+                        <h1 id="nowtime"></h1>
+                    </div>
+                    <div id="clock_box">
+                        <div id = clock>
+                            <div id="hour"></div>
+                            <div id="min"></div>
+                            <div id="sec"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <h2 class="section2_title">TO-DO LIST</h2>
+                <form id="form">
+                    <input id="text" type="text" placeholder="오늘 해야할 일" autocomplete="off">
+                    <button id="btn">등록</button>
+                </form>
+                <div id="todolist"></div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="javascript.js"></script>
+    </body>
+</html>

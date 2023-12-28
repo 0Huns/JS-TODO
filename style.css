@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    word-break: keep-all;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #d6e6f5;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    margin: 0 1rem;
+}
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 2px dotted #000000;
+}
+
+.section1_box{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#today{
+    font-size: 1.7rem;
+}
+
+#nowtime{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#clock_box{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock{
+    position: relative;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+#hour{
+    position: absolute;
+    height: 35%;
+    width: 0;
+    left: 50%;
+    top: 15%;
+    border: 2px solid #000000;
+    transform-origin: bottom;
+}
+
+#min{
+    position: absolute;
+    height: 45%;
+    width: 0;
+    left: 50%;
+    top: 5%;
+    border: 2px solid #000000;  
+    transform-origin: bottom;
+}
+
+#sec{
+    position: absolute;
+    height: 45%;
+    width: 0;
+    left: 50%;
+    top: 5%;
+    border: 1px solid #ff3333;
+    transform-origin: bottom;
+}
+
+.section2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section2_title{
+    font-size: 2rem;
+    margin: 5rem 0 2rem 0;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    height: 3rem;
+    width: 80%;
+    border-radius: 12px;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+#btn{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 12px;
+    background-color: white;
+    font-weight: 600;
+}
+
+#todolist{
+    list-style: none;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+#todolist li{
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#todolist span{
+    font-size: 1.5rem;
+    width: 10%;
+    cursor: pointer;
+}
+
+label .classcheck{
+    display: none;
+}
+
+label .divbox{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+label .divbox::after{
+    display: block;
+    content: '';
+    position: relative;
+    border: solid #02da46;
+    border-width: 0 3px 3px 0;
+    width: 0.5rem;
+    height: 1rem;
+    transform: rotate(45deg);
+    left: 4px;
+    bottom: 2px;
+    opacity: 0;
+}
+
+label input[type='checkbox']:checked + div::after{
+    opacity: 1;
+}
+
+.listtext{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.checked {
+    text-decoration: line-through 2px;
+    color: #5b5b5b;
+}
