@@ -182,12 +182,12 @@ label input[type='checkbox']:checked + div::after{
 }
 
 .listtext{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 .checked {
     text-decoration: line-through 2px;
     -webkit-text-decoration: line-through 2px;
-    color: #5b5b5b;
+    color: #737373;
 }
