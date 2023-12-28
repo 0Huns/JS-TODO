@@ -10,11 +10,7 @@ main{
 body{
     margin: 0 1rem;
 }
-
-section{
-    /* margin: 0; */
-}
-
+    
 .section1{
     height: 100%;
     width: auto;

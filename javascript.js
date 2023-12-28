@@ -102,4 +102,3 @@ function upload(event){
 }
 
 form.addEventListener('submit', upload);
-
