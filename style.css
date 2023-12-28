@@ -101,6 +101,7 @@ section{
     justify-content: flex-start;
     border-radius: 20px;
     background-color: #E1F1F4;
+    padding-bottom: 2rem;
 }
 
 .section2_title{
@@ -109,7 +110,7 @@ section{
 }
 
 #form{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
