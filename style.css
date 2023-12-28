@@ -47,13 +47,13 @@ section{
     background-color: #ffffff;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    transition: filter 2s;
+    transition: filter 1.5s;
 }
 
 #date_box:hover{
     filter: blur(0);
     -webkit-filter: blur(0);
-    transition: filter 2s;
+    transition: filter 1.5s;
 }
 
 
@@ -215,5 +215,5 @@ label input[type='checkbox']:checked + div::after{
 .checked {
     text-decoration: line-through 2px;
     --webkit-text-decoration: line-through 2px;
-    color: #737373;
+    color: #b1b1b1;
 }
