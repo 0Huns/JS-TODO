@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-color:  #d6e6f5; */
-}
-
 main{
     display: flex;
     flex-direction: row;
@@ -218,6 +214,6 @@ label input[type='checkbox']:checked + div::after{
 
 .checked {
     text-decoration: line-through 2px;
-    -webkit-text-decoration: line-through 2px;
+    --webkit-text-decoration: line-through 2px;
     color: #737373;
 }
