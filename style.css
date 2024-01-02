@@ -48,27 +48,39 @@ section{
     justify-content: center;
     border-radius: 4rem;
     background-color: #ffffff;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: filter 1.5s;
     border: 2px solid #000000;
     box-shadow: inset 0px 0px 11px 2px #adadad;
 }
 
 
-@media (hover: hover) {
-    #date_box:hover {
+@media (hover: hover) and (pointer: fine){
+    #date_box{
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        transition: filter 1.5s;
+    }
+
+    #date_box:hover{
         filter: blur(0);
         -webkit-filter: blur(0);
         transition: filter 1.5s;
     }
   }
+  
+@media (hover: none) and (pointer: coarse){
+    #date_box{
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+  }
 
-#date_box:hover{
+
+
+/* #date_box:hover{
     filter: blur(0);
     -webkit-filter: blur(0);
     transition: filter 1.5s;
-}
+} */
 
 
 #today{ 
