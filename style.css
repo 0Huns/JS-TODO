@@ -56,7 +56,7 @@ section{
 }
 
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
     #date_box:hover {
         filter: blur(0);
         -webkit-filter: blur(0);
