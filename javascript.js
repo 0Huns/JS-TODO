@@ -1,19 +1,19 @@
 //실시간 현재 날짜 및 시간 기능
 
-var nowtime = document.getElementById("nowtime");
-var today = document.getElementById("today");
+let nowtime = document.getElementById("nowtime");
+let today = document.getElementById("today");
 
 function outputdate(){
-    var nowdate = new Date();
-    var nowday = ["일요일","월요일", "화요일","수요일","목요일","금요일","토요일"]
-    var year = nowdate.getFullYear();
-    var month = nowdate.getMonth() +1;
-    var date = nowdate.getDate();
-    var day = nowdate.getDay();
+    let nowdate = new Date();
+    let nowday = ["일요일","월요일", "화요일","수요일","목요일","금요일","토요일"]
+    let year = nowdate.getFullYear();
+    let month = nowdate.getMonth() +1;
+    let date = nowdate.getDate();
+    let day = nowdate.getDay();
     
-    var hours = nowdate.getHours();
-    var minutes = nowdate.getMinutes();
-    var seconds = nowdate.getSeconds();
+    let hours = nowdate.getHours();
+    let minutes = nowdate.getMinutes();
+    let seconds = nowdate.getSeconds();
 
     today.innerHTML = year+"년 " + month+"월 " + date+"일 " + nowday[day];
     nowtime.innerHTML = hours+" : " + minutes+" : " + seconds+" ";
@@ -27,19 +27,19 @@ setInterval(outputdate, 1000);
 
 //아날로그 시계 기능
 function analogclock() {
-    var now = new Date();
+    let now = new Date();
 
-    var hour = document.getElementById('hour');
-    var min = document.getElementById('min');
-    var sec = document.getElementById('sec');
+    let hour = document.getElementById('hour');
+    let min = document.getElementById('min');
+    let sec = document.getElementById('sec');
     
-    var h = now.getHours();
-    var m = now.getMinutes();
-    var s = now.getSeconds(); 
+    let h = now.getHours();
+    let m = now.getMinutes();
+    let s = now.getSeconds(); 
  
-    var degH = h * (360 /12) + m * (360 / 12 / 60);
-    var degM = m * (360 / 60) + s * (360 / 60 /60);
-    var degS = s * (360 / 60);
+    let degH = h * (360 /12) + m * (360 / 12 / 60);
+    let degM = m * (360 / 60) + s * (360 / 60 /60);
+    let degS = s * (360 / 60);
     
     hour.style.transform = `rotate(${degH}deg)`;
     min.style.transform = `rotate(${degM}deg)`;
@@ -53,17 +53,17 @@ setInterval(analogclock, 1000);
 
 
 //To_do_list 등록 
-var todolist = document.getElementById("todolist");
-var inputtext = document.getElementById("text");
-var form = document.getElementById("form");
+let todolist = document.getElementById("todolist");
+let inputtext = document.getElementById("text");
+let form = document.getElementById("form");
 
 function listup(text){
-    var li = document.createElement("li");
-    var delbtn = document.createElement("span");
-    var check = document.createElement("input");
-    var checklabel = document.createElement("label");
-    var checkbox = document.createElement("div");
-    var listtext = document.createElement("div");
+    let li = document.createElement("li");
+    let delbtn = document.createElement("span");
+    let check = document.createElement("input");
+    let checklabel = document.createElement("label");
+    let checkbox = document.createElement("div");
+    let listtext = document.createElement("div");
 
     if(text.trim() !== ''){
         li.appendChild(checklabel);
