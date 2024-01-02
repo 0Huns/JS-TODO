@@ -16,7 +16,7 @@ function outputdate(){
     var seconds = nowdate.getSeconds();
 
     today.innerHTML = year+"년 " + month+"월 " + date+"일 " + nowday[day];
-    nowtime.innerHTML = hours+"시 " + minutes+"분 " + seconds+"초 ";
+    nowtime.innerHTML = hours+" : " + minutes+" : " + seconds+" ";
 };
 
 outputdate();
