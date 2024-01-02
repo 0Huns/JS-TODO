@@ -1,6 +1,6 @@
 <h1>HTML,CSS,JS를 이용한 TO-DO-LIST
 
-<h2>ES6 이전 JS를 사용하여 구현한 기능</h2>
+<h2>JS를 사용하여 구현한 기능</h2>
 
 1. 현재 DATE 구현
 
