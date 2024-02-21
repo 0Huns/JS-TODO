@@ -1,20 +1,25 @@
-<h1>HTML,CSS,JS를 이용한 TO-DO-LIST
+# HTML,CSS,JS를 이용한 TO-DO-LIST
 
-<h2>JS를 사용하여 구현한 기능</h2>
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
 
-1. 현재 DATE 구현
+### 🎈PAGE
 
-2. 현재 시각 아날로그 시계 구현
+- 배포 링크 : https://0huns.github.io/JS-TODO/
 
-3. To-do list UP/DEL 구현
+### 📑UI / UX
 
-4. Checkbox 체크 시 line-through 추가
+🪄 Flex와 Fixed를 사용한 디자인
 
+🪄 Checkbox 체크 디자인 커스텀
 
-<h2>CSS를 사용하여 구현한 기능</h2>
+🪄 아날로그 시계 구현
 
-1. Flex와 Fixed를 사용한 디자인
+### 🛠️주요 기능
 
-2. Checkbox 체크 디자인 커스텀
+✅ 현재 DATE 구현
 
-3. 아날로그 시계 구현
+✅ 현재 시각 아날로그 시계 구현
+
+✅ To-do list UP/DEL 구현
+
+✅ Checkbox 체크 시 line-through 추가
